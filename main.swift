@@ -1,3 +1,9 @@
+
+// Define function using direct calculation
+func direct_sum(n : Int) -> Int{       // Using double to prevent integer division
+  return n*(n+1) / 2                   // converting to Int - expected type.
+}
+
 // Define function using for loop
 func for_sum(n : Int) -> Int{
   var total = 0                         // Declare the value to return at the end
@@ -25,11 +31,6 @@ func rw_sum(n: Int) -> Int{
     cnt += 1                            // Increase cnt on each itteration
   } while cnt <= n                      // Repeats until cnt exceeds n
   return total 
-}
-
-// Define function using direct calculation
-func direct_sum(n : Int) -> Int{       // Using double to prevent integer division
-  return n*(n+1) / 2                   // converting to Int - expected type.
 }
 
 print(for_sum(n: 4))
